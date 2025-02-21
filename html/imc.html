@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="/css/imc.css">
 </head>
 <body>
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+        <h1>Calcule seu IMC</h1>
+    </header>
 
-    <main class="main" id="main"></main>
+    <main class="main" id="main">
+
+        <input class="peso" id="peso" type="number" placeholder="Digite seu peso ex: 36">
+
+        <input class="altura" id="altura" type="number" placeholder="Digite sua altura ex: 1.45">
+
+        <button id="enviar" class="enviar" onclick="calcularIMC()">
+            Fazer cálculo
+        </button>
+
+        <p id="resultado" class="resultado"></p>
+
+        <button type="button" class="limpar" onclick="limparFormulario()">Limpar</button>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <p>© 2023 Rede Social</p>
+    </footer>
     
     <script src="/js/imc.js"></script>
+    <script src="/js/reset.js"></script>
 </body>
 </html>
